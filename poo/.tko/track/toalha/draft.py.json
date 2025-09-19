@@ -7,8 +7,13 @@
         },
         {
             "label": "2025-09-19_21-34-44",
-            "content": "class Towel:\n    def __init__(self):\n        self.color : str = \"\"\n        self.size : str = \"\"\n        self.wetness : int = 0 \n\nminha = Towel()\nminha.color = \"rosinha \"\nminha.size = \"G\"\n\nhellys = Towel()\nhellys.color = \"vermelha\"\nhellys.size = \"M\"\n\nprint(f\"a cor da sua toalha \u00e9 {hellys.color}\")\n",
+            "content": "@@ -4,17 +4,16 @@\n ss Towel\n-l\n :%0A    de\n@@ -31,31 +31,8 @@\n self\n-, color : str, size:str\n ):%0A \n@@ -48,24 +48,25 @@\n lf.color\n+ \n : str = \n color%0A  \n@@ -57,21 +57,18 @@\n : str = \n-color\n+%22%22\n %0A       \n@@ -77,24 +77,25 @@\n elf.size\n+ \n : str = \n size%0A   \n@@ -86,20 +86,18 @@\n : str = \n-size\n+%22%22\n %0A       \n@@ -109,16 +109,17 @@\n .wetness\n+ \n : int = \n@@ -123,591 +123,175 @@\n  = 0\n+ \n %0A%0A\n-def getMaxwetness(self) -%3E int:%0A    if self.size == %22P%22:%0A        return 10%0A    if self.size == %22M%22:%0A        return 20%0A    if self\n+minha = Towel()%0Aminha.color = %22rosinha %22%0Aminha\n .size =\n-=\n  %22G%22\n-:%0A        return 30%0A        return 0%0A%0Adef dry(self, amount: int) -%3E None:%0A    self.wetnes\n+%0A%0Ahelly\n s \n-+\n = \n-amount%0A    if self.wetness %3E self.getMaxwetness():%0A        print(%22toalha encharcada%22)%0A    self.wetness = self.getMaxwetness()%0A%0Adef wringOut(self) -%3E None:%0A    self.wetness = 0%0Adef isDry(self) -%3E bool:%0A    return self.wetness == 0%0Adef show(self) -%3E None:%0A    print(self)%0Adef __str__(self) -%3E str:%0A    return f%22%7Bself.color%7D %7Bself.size%7D %7Bself.wetness%7D%22\n+Towel()%0Ahellys.color = %22vermelha%22%0Ahellys.size = %22M%22%0A%0Aprint(f%22a cor da sua toalha %C3%A9 %7Bhellys.color%7D%22)\n %0A\n",
             "lines": "15"
+        },
+        {
+            "label": "2025-09-19_22-09-46",
+            "content": "class Towell:\n    def __init__(self, color : str, size:str):\n        self.color: str = color\n        self.size: str = size\n        self.wetness: int = 0\n\ndef getMaxwetness(self) -> int:\n    if self.size == \"P\":\n        return 10\n    if self.size == \"M\":\n        return 20\n    if self.size == \"G\":\n        return 30\n        return 0\n\ndef dry(self, amount: int) -> None:\n    self.wetness += amount\n    if self.wetness > self.getMaxwetness():\n        print(\"toalha encharcada\")\n    self.wetness = self.getMaxwetness()\n\ndef wringOut(self) -> None:\n    self.wetness = 0\ndef isDry(self) -> bool:\n    return self.wetness == 0\ndef show(self) -> None:\n    print(self)\ndef __str__(self) -> str:\n    return f\"{self.color} {self.size} {self.wetness}\"\n",
+            "lines": "29"
         }
     ]
 }
