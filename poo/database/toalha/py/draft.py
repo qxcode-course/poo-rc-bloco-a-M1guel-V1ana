@@ -46,4 +46,4 @@ def main():
         else: # 7: erro
             print("fail: comando não encontrado")
 
-main() # passo 1
+main() 
