@@ -12,6 +12,7 @@ expanded:
 - bloco_b-modificadores-de-acesso
 - bloco_b-agregação-simples
 tasks:
+  animal: '{rate:100}'
   enxugar: '{rate:100}'
 flags:
   quests: 0
