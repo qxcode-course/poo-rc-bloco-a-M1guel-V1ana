@@ -1,0 +1,87 @@
+2025-09-25 08:04:02, MOVE, v:1, k:animal, mode:PICK
+2025-09-25 08:04:03, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:04:08, MOVE, v:1, k:animal, mode:BACK
+2025-09-25 08:04:11, MOVE, v:1, k:animal, mode:PICK
+2025-09-25 08:04:12, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:13:30, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:13:31, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:13:31, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:13:32, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:13:32, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:13:33, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:13:33, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:13:33, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:13:34, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:57:54, MOVE, v:1, k:animal, mode:PICK
+2025-09-25 08:57:59, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:58:15, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:58:16, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:58:17, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:58:18, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:58:18, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:58:19, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:58:20, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 08:58:21, EXEC, v:1, k:animal, mode:FREE
+2025-09-25 16:02:58, MOVE, v:1, k:carro, mode:DOWN
+2025-09-25 16:03:00, MOVE, v:1, k:carro, mode:PICK
+2025-09-25 16:18:21, MOVE, v:1, k:carro, mode:PICK
+2025-09-25 16:18:22, EXEC, v:1, k:carro, mode:FULL, rate:0, size:11
+2025-09-25 16:18:43, EXEC, v:1, k:carro, mode:FULL, rate:0, size:11
+2025-09-25 16:25:29, EXEC, v:1, k:carro, mode:FULL, rate:0, size:35
+2025-09-25 16:25:39, EXEC, v:1, k:carro, mode:FULL, rate:0, size:35
+2025-09-25 16:28:24, EXEC, v:1, k:carro, mode:FULL, rate:0, size:33
+2025-09-25 16:28:25, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:28:25, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:28:26, MOVE, v:1, k:carro, mode:BACK
+2025-09-25 16:28:27, MOVE, v:1, k:carro, mode:PICK
+2025-09-25 16:28:28, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:28:28, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:28:29, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:28:29, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:28:29, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:28:29, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:29:30, EXEC, v:1, k:carro, mode:FULL, rate:0, size:33
+2025-09-25 16:29:54, EXEC, v:1, k:carro, mode:FULL, rate:0, size:33
+2025-09-25 16:29:55, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:29:55, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:29:55, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:29:56, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:29:56, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:29:56, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:29:58, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:30:09, MOVE, v:1, k:carro, mode:PICK
+2025-09-25 16:30:10, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:30:10, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:32:45, EXEC, v:1, k:carro, mode:FULL, rate:0, size:33
+2025-09-25 16:33:09, EXEC, v:1, k:carro, mode:FULL, rate:0, size:33
+2025-09-25 16:33:28, EXEC, v:1, k:carro, mode:FULL, rate:0, size:33
+2025-09-25 16:33:58, EXEC, v:1, k:carro, mode:FULL, rate:0, size:33
+2025-09-25 16:34:00, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-09-25 16:34:40, EXEC, v:1, k:carro, mode:FULL, rate:0, size:33
+2025-09-25 16:35:53, EXEC, v:1, k:carro, mode:FULL, rate:0, size:33
+2025-09-25 16:36:08, EXEC, v:1, k:carro, mode:FULL, rate:10, size:33
+2025-09-25 16:51:30, EXEC, v:1, k:carro, mode:FULL, rate:0, size:43
+2025-09-25 16:55:06, EXEC, v:1, k:carro, mode:FULL, rate:10, size:43
+2025-09-25 17:02:50, EXEC, v:1, k:carro, mode:FULL, rate:10, size:45
+2025-09-25 17:03:41, EXEC, v:1, k:carro, mode:FULL, rate:10, size:45
+2025-09-25 17:04:42, EXEC, v:1, k:carro, mode:FULL, rate:10, size:46
+2025-09-25 17:10:43, MOVE, v:1, k:carro, mode:PICK
+2025-09-25 17:10:44, EXEC, v:1, k:carro, mode:FULL, rate:10
+2025-09-25 17:27:47, EXEC, v:1, k:carro, mode:FULL, rate:10, size:41
+2025-09-25 17:38:19, MOVE, v:1, k:carro, mode:PICK
+2025-09-25 17:38:20, EXEC, v:1, k:carro, mode:FULL, rate:10
+2025-09-25 17:39:57, EXEC, v:1, k:carro, mode:FULL, rate:10, size:42
+2025-09-25 17:41:49, EXEC, v:1, k:carro, mode:FULL, rate:20, size:40
+2025-09-25 17:43:00, EXEC, v:1, k:carro, mode:FULL, rate:20, size:40
+2025-09-25 17:43:37, MOVE, v:1, k:carro, mode:PICK
+2025-09-25 17:43:38, EXEC, v:1, k:carro, mode:FULL, rate:20
+2025-09-25 17:46:59, EXEC, v:1, k:carro, mode:FULL, rate:20, size:40
+2025-09-25 17:47:09, EXEC, v:1, k:carro, mode:FULL, rate:30, size:40
+2025-09-25 17:48:28, MOVE, v:1, k:carro, mode:PICK
+2025-09-25 17:48:29, EXEC, v:1, k:carro, mode:FULL, rate:30
+2025-09-25 18:03:23, EXEC, v:1, k:carro, mode:FULL, rate:30, size:46
+2025-09-25 18:05:23, EXEC, v:1, k:carro, mode:FULL, rate:40, size:46
+2025-09-25 18:06:02, EXEC, v:1, k:carro, mode:FULL, rate:30, size:47
+2025-09-25 18:06:30, EXEC, v:1, k:carro, mode:FULL, rate:40, size:48
+2025-09-25 18:07:13, EXEC, v:1, k:carro, mode:FULL, rate:50, size:48
+2025-09-25 18:10:32, MOVE, v:1, k:carro, mode:BACK
