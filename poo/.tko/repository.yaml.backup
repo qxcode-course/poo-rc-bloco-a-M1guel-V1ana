@@ -13,6 +13,7 @@ expanded:
 - bloco_b-agregação-simples
 tasks:
   animal: '{rate:100}'
+  carro: '{rate:50}'
   enxugar: '{rate:100}'
 flags:
   quests: 0

@@ -20,7 +20,17 @@ class Carro:
         else:    
              print("fail: nao ha ninguem no carro")    
     
-    def 
+    def gasMax(self, incremnt = int ):
+        self.gas += incremnt
+        if self.gas > self.gasMax:
+            self.gas = self.gasMax
+        if self.gas < 0:
+            self.gas = 0
+
+
+
+
+
 def main():
     carro: Carro = Carro("", "", 0)
     
@@ -38,6 +48,10 @@ def main():
             carro.maxPassa()
         elif args[0] == "leave":
             carro.leave()
+        elif args[0] == "fuel":
+            if len(args[1]) > 0:
+                carro.gasMax(int(args[1]))
+                
 
 
  

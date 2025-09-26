@@ -147,8 +147,23 @@
         },
         {
             "label": "2025-09-25_18-07-13",
-            "content": "class Carro:\n    def __init__(self, passa: int =0, gas:int = 0, km:int = 0):\n        self.passa: int = 0\n        self.gas :int = 0\n        self.km :int = 0\n\n    def __str__(self) -> str:\n        return f\"pass: {self.passa}, gas: {self.gas}, km: {self.km}\"\n\n        \n    def maxPassa(self):\n        self.passa += 1\n        if self.passa >2:\n            self.passa = 2\n            print(\"fail: limite de pessoas atingido\")\n\n    def leave(self):\n        if self.passa >0:\n            self.passa -= 1\n        else:    \n             print(\"fail: nao ha ninguem no carro\")    \n\ndef main():\n    carro: Carro = Carro(\"\", \"\", 0)\n    \n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        \n        \n        if args[0] == \"end\" :\n            break\n        elif args[0] == \"show\":\n            print(carro)\n        elif args[0] == \"enter\":\n            carro.maxPassa()\n        elif args[0] == \"leave\":\n            carro.leave()\n\n\n \n \n \n \n \n \nmain()           ",
+            "content": "@@ -564,29 +564,16 @@\n o%22)    %0A\n-    %0A    def \n %0Adef mai\n",
             "lines": "48"
+        },
+        {
+            "label": "2025-09-25_22-25-16",
+            "content": "@@ -573,19 +573,20 @@\n    %0A    \n-%0A%0A%0A\n+def \n %0Adef mai\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-09-25_22-25-49",
+            "content": "@@ -577,193 +577,8 @@\n     \n-def gasMax(self, incremnt = int ):%0A        self.gas += incremnt%0A        if self.gas %3E self.gasMax:%0A            self.gas = self.gasMax%0A        if self.gas %3C 0:%0A            self.gas = 0%0A%0A\n %0A%0A%0A%0A\n@@ -990,133 +990,8 @@\n e()%0A\n-        elif args%5B0%5D == %22fuel%22:%0A            if len(args%5B1%5D) %3E 0:%0A                carro.gasMax(int(args%5B1%5D))%0A                %0A\n %0A%0A %0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-09-25_22-57-52",
+            "content": "class Carro:\n    def __init__(self, passa: int =0, gas:int = 0, km:int = 0):\n        self.passa: int = 0\n        self.gas :int = 0\n        self.km :int = 0\n\n    def __str__(self) -> str:\n        return f\"pass: {self.passa}, gas: {self.gas}, km: {self.km}\"\n\n        \n    def maxPassa(self):\n        self.passa += 1\n        if self.passa >2:\n            self.passa = 2\n            print(\"fail: limite de pessoas atingido\")\n\n    def leave(self):\n        if self.passa >0:\n            self.passa -= 1\n        else:    \n             print(\"fail: nao ha ninguem no carro\")    \n    \n    def gasMax(self, incremnt = int ):\n        self.gas += incremnt\n        if self.gas > self.gasMax:\n            self.gas = self.gasMax\n        if self.gas < 0:\n            self.gas = 0\n\n\n\n\n\ndef main():\n    carro: Carro = Carro(\"\", \"\", 0)\n    \n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        \n        \n        if args[0] == \"end\" :\n            break\n        elif args[0] == \"show\":\n            print(carro)\n        elif args[0] == \"enter\":\n            carro.maxPassa()\n        elif args[0] == \"leave\":\n            carro.leave()\n        elif args[0] == \"fuel\":\n            if len(args[1]) > 0:\n                carro.gasMax(int(args[1]))\n                \n\n\n \n \n \n \n \n \nmain()           ",
+            "lines": "63"
         }
     ]
 }
