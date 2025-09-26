@@ -20,14 +20,23 @@ class Carro:
         else:    
              print("fail: nao ha ninguem no carro")    
     
-    def gasMax(self, incremnt = int ):
+    def gasMax(self, incremnt : int ):
         self.gas += incremnt
-        if self.gas > self.gasMax:
-            self.gas = self.gasMax
-        if self.gas < 0:
-            self.gas = 0
+        if self.gas > 100:
+            self.gas = 100
+     
 
 
+    def drive(self, distance : int ):
+        if self.passa == 0:
+            print("fail: nao ha ninguem no carro ")
+        elif self.gasMax == 0:
+            print(f"fail: tanque vazio apos andar {self.gas} km")
+            self.km += self.gas
+            self.gas = 0 
+        else:
+            self.km += distance
+            self.gas -= distance 
 
 
 
@@ -40,22 +49,23 @@ def main():
         args: list[str] = line.split(" ")
         
         
-        if args[0] == "end" :
+        if args[0]=="end":
             break
-        elif args[0] == "show":
-            print(carro)
-        elif args[0] == "enter":
+        elif args[0]=="enter":
             carro.maxPassa()
-        elif args[0] == "leave":
+        elif args[0]=="show":
+            print(carro)
+        elif args[0]=="leave":
             carro.leave()
-        elif args[0] == "fuel":
-            if len(args[1]) > 0:
-                carro.gasMax(int(args[1]))
+        elif args[0]=="fuel":
+            increment = int(args[1])
+            carro.gasMax(ncrement)
+        elif args[0]=="drive":
+            increment= int(args[1])
+            carro.drive(increment)
                 
 
 
- 
- 
  
  
  
