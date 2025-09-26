@@ -187,8 +187,38 @@
         },
         {
             "label": "2025-09-26_09-41-58",
-            "content": "class Carro:\n    def __init__(self, passa: int =0, gas:int = 0, km:int = 0):\n        self.passa: int = 0\n        self.gas :int = 0\n        self.km :int = 0\n\n    def __str__(self) -> str:\n        return f\"pass: {self.passa}, gas: {self.gas}, km: {self.km}\"\n\n        \n    def maxPassa(self):\n        self.passa += 1\n        if self.passa >2:\n            self.passa = 2\n            print(\"fail: limite de pessoas atingido\")\n\n    def leave(self):\n        if self.passa >0:\n            self.passa -= 1\n        else:    \n             print(\"fail: nao ha ninguem no carro\")    \n    \n    def gasMax(self, incremnt : int ):\n        self.gas += incremnt\n        if self.gas > 100:\n            self.gas = 100\n     \n\n\n    def drive(self, distance : int ):\n        if self.passa == 0:\n            print(\"fail: nao ha ninguem no carro \")\n        elif self.gasMax == 0:\n            print(f\"fail: tanque vazio apos andar {self.gas} km\")\n            self.km += self.gas\n            self.gas = 0 \n        else:\n            self.km += distance\n            self.gas -= distance \n\n\n\ndef main():\n    carro: Carro = Carro(\"\", \"\", 0)\n    \n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        \n        \n        if args[0]==\"end\":\n            break\n        elif args[0]==\"enter\":\n            carro.maxPassa()\n        elif args[0]==\"show\":\n            print(carro)\n        elif args[0]==\"leave\":\n            carro.leave()\n        elif args[0]==\"fuel\":\n            increment = int(args[1])\n            carro.fuel(increment)\n        elif args[0]==\"drive\":\n            increment= int(args[1])\n            carro.drive(increment)\n                \n\n\n \n \n \n \nmain()           ",
+            "content": "@@ -1540,22 +1540,20 @@\n   carro.\n-gasMax\n+fuel\n (increme\n",
             "lines": "73"
+        },
+        {
+            "label": "2025-09-26_14-12-20",
+            "content": "@@ -813,16 +813,17 @@\n no carro\n+ \n %22)%0A     \n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-09-26_14-12-35",
+            "content": "@@ -457,15 +457,64 @@\n lf.p\n-sg==0:%0A\n+assa %3E0:%0A            self.passa -= 1%0A        else:    %0A \n     \n@@ -523,25 +523,24 @@\n       print(\n-f\n %22fail: nao h\n@@ -563,47 +563,10 @@\n ro%22)\n-%0A        else :%0A            self.psg-=1\n+  \n   %0A \n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-09-26_14-22-35",
+            "content": "@@ -453,20 +453,18 @@\n f self.p\n-assa\n+sg\n ==0:%0A   \n@@ -545,20 +545,19 @@\n   self.p\n-assa\n+sg-\n =1  %0A   \n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-09-26_14-22-55",
+            "content": "@@ -1083,16 +1083,25 @@\n = Carro(\n+%22%22, %22%22, 0\n )%0A    %0A \n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-09-26_14-23-22",
+            "content": "@@ -45,17 +45,15 @@\n nt =\n- \n 0, gas:\n- \n int \n@@ -60,17 +60,16 @@\n = 0, km:\n- \n int = 0)\n@@ -92,16 +92,17 @@\n assa\n- = passa\n+: int = 0\n %0A   \n@@ -119,13 +119,16 @@\n gas \n-= gas\n+:int = 0\n %0A   \n@@ -144,12 +144,16 @@\n .km \n-= km\n+:int = 0\n %0A%0A  \n@@ -250,16 +250,25 @@\n f.km%7D%22%0A%0A\n+        %0A\n     def \n@@ -283,35 +283,32 @@\n (self):%0A        \n-if \n self.passa %3C 2:%0A\n@@ -306,12 +306,12 @@\n ssa \n-%3C 2:\n++= 1\n %0A   \n@@ -307,35 +307,34 @@\n sa += 1%0A        \n-   \n+if\n  self.passa += 1\n@@ -329,29 +329,31 @@\n f.passa \n-+= 1%0A\n+%3E2:%0A   \n         \n else:%0A  \n@@ -336,37 +336,47 @@\n  %3E2:%0A           \n-else:\n+ self.passa = 2\n %0A            pri\n@@ -449,36 +449,34 @@\n    if self.passa\n- \n ==\n- \n 0:%0A            p\n@@ -472,32 +472,33 @@\n           print(\n+f\n %22fail: nao ha ni\n@@ -518,32 +518,33 @@\n o%22)%0A        else\n+ \n :%0A            se\n@@ -555,16 +555,17 @@\n assa\n- -= 1  %0A\n+=1  %0A    \n %0A   \n@@ -592,16 +592,17 @@\n crem\n-e\n nt\n+ \n : int\n+ \n ):%0A \n@@ -626,17 +626,16 @@\n = increm\n-e\n nt%0A     \n@@ -683,16 +683,23 @@\n s = 100%0A\n+     %0A%0A\n %0A    def\n@@ -719,21 +719,23 @@\n distance\n+ \n : int\n+ \n ):%0A     \n@@ -833,109 +833,18 @@\n .gas\n+Max\n  == 0:%0A\n-            print(%22fail: tanque vazio%22)%0A        else:%0A            if distance %3E self.gas:%0A    \n     \n@@ -905,20 +905,16 @@\n s%7D km%22)%0A\n-    \n         \n@@ -941,36 +941,32 @@\n gas%0A            \n-    \n self.gas = 0%0A   \n@@ -961,27 +961,26 @@\n .gas = 0\n-%0A \n  \n+%0A\n         \n   else:%0A\n@@ -975,20 +975,14 @@\n     \n-  \n else:%0A\n-    \n     \n@@ -1013,36 +1013,32 @@\n nce%0A            \n-    \n self.gas -= dist\n@@ -1041,16 +1041,18 @@\n distance\n+ %0A\n %0A%0A%0Adef m\n@@ -1067,16 +1067,23 @@\n    carro\n+: Carro\n  = Carro\n@@ -1118,16 +1118,21 @@\n     line\n+: str\n  = input\n@@ -1172,16 +1172,27 @@\n     args\n+: list%5Bstr%5D\n  = line.\n@@ -1207,24 +1207,33 @@\n %22)%0A        %0A\n+        %0A\n         if a\n@@ -1238,20 +1238,18 @@\n  args%5B0%5D\n- \n ==\n- \n %22end%22:%0A \n@@ -1285,20 +1285,18 @@\n  args%5B0%5D\n- \n ==\n- \n %22enter%22:\n@@ -1345,20 +1345,18 @@\n  args%5B0%5D\n- \n ==\n- \n %22show%22:%0A\n@@ -1400,20 +1400,18 @@\n  args%5B0%5D\n- \n ==\n- \n %22leave%22:\n@@ -1457,20 +1457,18 @@\n  args%5B0%5D\n- \n ==\n- \n %22fuel%22:%0A\n@@ -1560,20 +1560,18 @@\n  args%5B0%5D\n- \n ==\n- \n %22drive%22:\n@@ -1584,33 +1584,32 @@\n        increment\n- \n = int(args%5B1%5D)%0A \n@@ -1646,13 +1646,48 @@\n nt)%0A\n-%0A%0Amain()%0A\n+                %0A%0A%0A %0A %0A %0A %0Amain()           \n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-09-26_14-27-00",
+            "content": "class Carro:\n    def __init__(self, passa: int = 0, gas: int = 0, km: int = 0):\n        self.passa = passa\n        self.gas = gas\n        self.km = km\n\n    def __str__(self) -> str:\n        return f\"pass: {self.passa}, gas: {self.gas}, km: {self.km}\"\n\n    def maxPassa(self):\n        if self.passa < 2:\n            self.passa += 1\n        else:\n            print(\"fail: limite de pessoas atingido\")\n\n    def leave(self):\n        if self.passa == 0:\n            print(\"fail: nao ha ninguem no carro\")\n        else:\n            self.passa -= 1  \n\n    def gasMax(self, increment: int):\n        self.gas += increment\n        if self.gas > 100:\n            self.gas = 100\n\n    def drive(self, distance: int):\n        if self.passa == 0:\n            print(\"fail: nao ha ninguem no carro\")\n        elif self.gas == 0:\n            print(\"fail: tanque vazio\")\n        else:\n            if distance > self.gas:\n                print(f\"fail: tanque vazio apos andar {self.gas} km\")\n                self.km += self.gas\n                self.gas = 0\n            else:\n                self.km += distance\n                self.gas -= distance\n\n\ndef main():\n    carro = Carro()\n    \n    while True:\n        line = input()\n        print(\"$\" + line)\n        args = line.split(\" \")\n        \n        if args[0] == \"end\":\n            break\n        elif args[0] == \"enter\":\n            carro.maxPassa()\n        elif args[0] == \"show\":\n            print(carro)\n        elif args[0] == \"leave\":\n            carro.leave()\n        elif args[0] == \"fuel\":\n            increment = int(args[1])\n            carro.gasMax(increment)\n        elif args[0] == \"drive\":\n            increment = int(args[1])\n            carro.drive(increment)\n\n\nmain()\n",
+            "lines": "66"
         }
     ]
 }
