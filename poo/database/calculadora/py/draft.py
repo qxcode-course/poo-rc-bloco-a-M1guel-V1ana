@@ -1,5 +1,5 @@
 class Calculadora:
-    def __init__(self, display, batteryMax ):
+    def __init__(self,  batteryMax: int, baterry : int, display ):
         self.display: float = 0.0
         self.batteryMax: int = 0
 
