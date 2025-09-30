@@ -31,8 +31,6 @@ class Calculadora:
         else:
             print("fail: bateria insuficiente")
 
-
-
 def main():
     calc : Calculadora = Calculadora("")
 
